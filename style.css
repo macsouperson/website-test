@@ -20,3 +20,52 @@ nav a {
 nav a:hover {
   color: #00bcd4;
 }
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  background: #111;
+  padding: 15px;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+}
+
+/* container for dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* hidden submenu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #222;
+  min-width: 160px;
+  flex-direction: column;
+  z-index: 1;
+}
+
+/* links inside dropdown */
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+/* show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* hover effect */
+.dropdown-content a:hover {
+  background: #333;
+}
