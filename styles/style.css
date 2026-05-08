@@ -1,6 +1,5 @@
 body {
-  font-family: Arial;
-  text-align: center;
+  font-family: Calibri;
   margin-top: 50px;
 }
 
@@ -8,7 +7,7 @@ body {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .navbar {
