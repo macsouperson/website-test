@@ -59,3 +59,7 @@ body {
 .dropdown-content a:hover {
   background: #333;
 }
+
+cite {
+  font-style: italic;
+}

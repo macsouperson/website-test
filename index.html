@@ -2,21 +2,11 @@
 <html>
 <head>
   <title>Home</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <a href="index.html">Home</a>
-
-  <div class="dropdown">
-    <a href="#" class="dropbtn">History</a>
-    <div class="dropdown-content">
-      <a href="history_page_one.html">Early History</a>
-    </div>
-  </div>
-  <a href="bibliography.html">Work Cited</a>
-</nav>
+<div id="navbar"></div>
 
 <div class="container">
 
@@ -27,6 +17,13 @@
   
 </div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
+<script>
+  fetch("/styles/navbar.html")
+  .then(reponse => reponse.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+  });
+</script>
 </body>
 </html>
