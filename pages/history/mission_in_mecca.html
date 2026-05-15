@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Islamic History</title>
+  <link rel="stylesheet" href="../../styles/base.css">
+</head>
+
+<body>
+<div id="navbar"></div>
+
+<div id="addendums">
+  <!-- TBD -- place corrections / updates here -->
+</div>
+<hr>
+
+<div class="container">
+  <h1>Spreading The Word</h1>
+  <p>Having received a clear command from God, the Prophet Muhammed began to truly step into his role as a prophet and messenger of God. 
+  The first person to support the Prophet was his wife, Khadija bint Khuwaylid. Her commitment and assuredness in her husband was unwavering. </p>
+  <!-- <p>Other early converts included Abu Bakr ibn Siddiq, Ali ibn Abu Talib, and Zayd bin Haritha</p> -->
+</div>
+
+<div class="footnotes">
+  <h4>Notes</h4>
+  <ol>
+    <li> 
+  </ol>
+</div>
+<script src="script.js"></script>
+<script>
+  fetch("/styles/navbar.html")
+  .then(reponse => reponse.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+  });
+</script>
+</body>
+</html>
